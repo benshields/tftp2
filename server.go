@@ -12,7 +12,7 @@ import (
 
 // Server defines parameters for running a TFTP server. The zero value for Server is a valid configuration.
 type Server struct {
-	Addr string // Addr is the UDP address to listen on, ":tftp" if empty
+	Addr string // Addr is the UDP address to listen on, ":tftp" if empty.
 
 	Root string // Root is the path to the directory in the Operating System which holds the files to be served.
 
@@ -30,11 +30,11 @@ type Server struct {
 }
 
 func (srv *Server) Close() error {
-	/* TODO: Implement func (srv *Server) Close() */
+	/* TODO: Implement func (srv *Server) Close() error */
 	return nil
 }
 
 func (srv *Server) ListenAndServe() error {
-	/* TODO: Implement func (srv *Server) ListenAndServe() */
+	/* TODO: Implement func (srv *Server) ListenAndServe() error */
 	return nil
 }
